@@ -5,7 +5,6 @@
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
     <GlyphID id="0" name=".notdef"/>
     <GlyphID id="1" name="space"/>
-    <GlyphID id="2" name="hyphen"/>
   </GlyphOrder>
 
   <head>
@@ -15,13 +14,13 @@
     <checkSumAdjustment value="0xBD9FD24D"/>
     <magicNumber value="0x5F0F3CF5"/>
     <flags value="00000000 00001011"/>
-    <unitsPerEm value="512"/>
+    <unitsPerEm value="16"/>
     <created value="Mon Nov 11 20:09:24 2013"/>
     <modified value="Fri Oct 11 20:10:45 2013"/>
     <xMin value="0"/>
-    <yMin value="-32"/>
-    <xMax value="5120"/>
-    <yMax value="480"/>
+    <yMin value="0"/>
+    <xMax value="0"/>
+    <yMax value="0"/>
     <macStyle value="00000000 00000000"/>
     <lowestRecPPEM value="8"/>
     <fontDirectionHint value="2"/>
@@ -31,10 +30,10 @@
 
   <hhea>
     <tableVersion value="1.0"/>
-    <ascent value="480"/>
-    <descent value="-32"/>
+    <ascent value="15"/>
+    <descent value="-1"/>
     <lineGap value="0"/>
-    <advanceWidthMax value="5120"/>
+    <advanceWidthMax value="8"/>
     <minLeftSideBearing value="0"/>
     <minRightSideBearing value="0"/>
     <xMaxExtent value="5120"/>
@@ -52,12 +51,12 @@
   <maxp>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
-    <numGlyphs value="3"/>
-    <maxPoints value="5"/>
-    <maxContours value="1"/>
+    <numGlyphs value="2"/>
+    <maxPoints value="0"/>
+    <maxContours value="0"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
-    <maxZones value="2"/>
+    <maxZones value="0"/>
     <maxTwilightPoints value="0"/>
     <maxStorage value="0"/>
     <maxFunctionDefs value="0"/>
@@ -70,20 +69,20 @@
 
   <OS_2>
     <version value="1"/>
-    <xAvgCharWidth value="512"/>
+    <xAvgCharWidth value="4"/>
     <usWeightClass value="400"/>
     <usWidthClass value="5"/>
     <fsType value="00000000 00000000"/>
-    <ySubscriptXSize value="332"/>
-    <ySubscriptYSize value="358"/>
+    <ySubscriptXSize value="0"/>
+    <ySubscriptYSize value="0"/>
     <ySubscriptXOffset value="0"/>
-    <ySubscriptYOffset value="71"/>
-    <ySuperscriptXSize value="332"/>
-    <ySuperscriptYSize value="358"/>
+    <ySubscriptYOffset value="0"/>
+    <ySuperscriptXSize value="0"/>
+    <ySuperscriptYSize value="0"/>
     <ySuperscriptXOffset value="0"/>
-    <ySuperscriptYOffset value="245"/>
-    <yStrikeoutSize value="25"/>
-    <yStrikeoutPosition value="132"/>
+    <ySuperscriptYOffset value="0"/>
+    <yStrikeoutSize value="0"/>
+    <yStrikeoutPosition value="0"/>
     <sFamilyClass value="0"/>
     <panose>
       <bFamilyType value="0"/>
@@ -104,27 +103,25 @@
     <achVendID value="\x00\x00\x00\x00"/>
     <fsSelection value="00000000 01000000"/>
     <fsFirstCharIndex value="32"/>
-    <fsLastCharIndex value="45"/>
-    <sTypoAscender value="480"/>
-    <sTypoDescender value="-32"/>
-    <sTypoLineGap value="-32"/>
-    <usWinAscent value="480"/>
-    <usWinDescent value="32"/>
+    <fsLastCharIndex value="32"/>
+    <sTypoAscender value="15"/>
+    <sTypoDescender value="-1"/>
+    <sTypoLineGap value="-1"/>
+    <usWinAscent value="15"/>
+    <usWinDescent value="1"/>
     <ulCodePageRange1 value="00000000 00000000 00000000 00000000"/>
     <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
   </OS_2>
 
   <hmtx>
     <mtx name=".notdef" width="0" lsb="0"/>
-    <mtx name="hyphen" width="5120" lsb="0"/>
-    <mtx name="space" width="256" lsb="0"/>
+    <mtx name="space" width="8" lsb="0"/>
   </hmtx>
 
   <cmap>
     <tableVersion version="0"/>
     <cmap_format_4 platformID="3" platEncID="1" language="0">
       <map code="0x20" name="space"/><!-- SPACE -->
-      <map code="0x2d" name="hyphen"/><!-- HYPHEN-MINUS -->
     </cmap_format_4>
   </cmap>
 
@@ -138,16 +135,6 @@
          will be recalculated by the compiler. -->
 
     <TTGlyph name=".notdef"/><!-- contains no outline data -->
-
-    <TTGlyph name="hyphen" xMin="0" yMin="-32" xMax="5120" yMax="480">
-      <contour>
-        <pt x="0" y="480" on="1"/>
-        <pt x="5120" y="480" on="1"/>
-        <pt x="5120" y="-32" on="1"/>
-        <pt x="0" y="-32" on="1"/>
-      </contour>
-      <instructions><assembly></assembly></instructions>
-    </TTGlyph>
 
     <TTGlyph name="space" xMin="0" yMin="0" xMax="0" yMax="0">
       <instructions><assembly></assembly></instructions>
